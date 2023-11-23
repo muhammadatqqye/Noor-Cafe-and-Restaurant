@@ -614,7 +614,7 @@ body.nav-active { overflow: hidden; }
 
 .header.active {
   padding-block: 20px;
-  background-color: var(--eerie-black-4);
+  background-color: rgba(0, 0, 0, 0.5);
   border-color: var(--black-alpha-15);
 }
 
@@ -2140,4 +2140,8 @@ textarea.input-field {
     left: 0;
   }
 
+}
+
+#topSectionPadding{
+  padding: 50px;
 }
