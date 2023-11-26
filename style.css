@@ -67,3 +67,26 @@ ul {
         display: flex;
     }
 }
+
+
+@media (max-width: 991px) {
+    .form-right {
+        display: none;
+    }
+
+    .footer-list, .footer-list li {
+        display:inline-table;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+        display: none;
+    }
+
+    .footerListHide {
+        display: none;
+    }
+
+}
