@@ -75,7 +75,7 @@ ul {
     }
 
     .footer-list, .footer-list li {
-        display:inline-table;
+        display: inline-table;
         margin: 0 10px;
     }
 }
