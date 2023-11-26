@@ -29,20 +29,17 @@ ul {
 }
 
 .tab-nav {
-    max-width: 300px;
     margin: 0 auto;
-    /*border: 1px solid gainsboro;*/
 }
 
 .tab-nav button {
-    width: 100%;
+    width: 500px;
+    margin-bottom: 5px;
 }
 
 .tab-nav ul {
-    display: none;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: auto;
 }
 
 .tab-nav ul.show {
@@ -59,11 +56,6 @@ ul {
         gap: 16px;
         flex-direction: row;
     }
-}
-
-.tab-content {
-    padding: 32px;
-    margin-top: 20px;
 }
 
 @media (min-width: 150px) {
