@@ -90,3 +90,8 @@ ul {
     }
 
 }
+
+.tab-content{
+    /* display: none; */
+    margin-top: 30px;
+}
