@@ -117,3 +117,29 @@ tabContainer.addEventListener('click', e => {
 selectDynamicText();
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.reservation-form form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        // Basic form validation
+        const name = form.querySelector('input[name="name"]').value.trim();
+        const phone = form.querySelector('input[name="phone"]').value.trim();
+        const person = form.querySelector('select[name="person"]').value;
+        const date = form.querySelector('input[name="reservation-date"]').value.trim();
+        const time = form.querySelector('select[name="time"]').value;
+
+        if (!name || !phone || person === "Select" || !date || time === "Select") {
+            alert('Please fill in all the required fields.');
+            return;
+        }
+
+        // Prepare message for WhatsApp
+        const message = `Name: ${name}%0APhone: ${phone}%0APersons: ${person}%0ADate: ${date}%0ATime: ${time}`;
+
+        // Redirect to WhatsApp with prefilled message
+        const whatsappLink = `https://wa.me/+8801712750466?text=${message}`;
+        window.location.href = whatsappLink;
+    });
+});
