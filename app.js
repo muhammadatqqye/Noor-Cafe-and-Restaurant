@@ -115,3 +115,5 @@ tabContainer.addEventListener('click', e => {
 
 // Initial setting of dynamic text in mobile select
 selectDynamicText();
+
+
